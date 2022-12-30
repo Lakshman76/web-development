@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        div{
+            background-color: aliceblue;
+            margin: 50PX 100px;
+            
+        }
+        label,p{
+            margin: 10px;
+        }
+        button{
+            margin-left: 300px;
+            background-color:rgb(192, 199, 205);
+        }
+    </style>
+</head>
+<body style="background-color: rgb(139, 64, 172);">
+    <div>
+        <h2 style="background-color: #414141; text-align: center; color:#d3cbcb;">Registration Form</h2>
+
+        <form action="" method="get" autocomplete="on">
+            <label for="">Name : </label>
+            <input type="text" id="" placeholder="First-Name">
+            <input type="text" id="mname" placeholder="Midddle-Name">
+            <input type="text" id="lname" placeholder="Last-Name"><br><br>
+
+            <label for="name">Father's Name : </label>
+            <input type="text" placeholder="First-Name">
+            <input type="text" placeholder="Last-Name"><br><br>
+
+            <label for="gender">Select Gender :</label><br>
+            <label for="male">Male</label>
+            <input type="radio" name="gender-choice">
+            <label for="male">Female</label>
+            <input type="radio" name="gender-choice">
+            <label for="male">others</label>
+            <input type="radio" name="gender-choice"><br><br>
+
+            <label for="email">Emal ID : </label>
+            <input type="email" placeholder="xyz@gmail.com"><br><br>
+
+            <label for="date of birth">D.O.B : </label>
+            <input type="date" > <br><br>
+
+            <label for="occupation">Occupation :</label>
+            <input type="text" placeholder="ex-student"><br><br>
+
+            <label for="password">Password : </label>
+            <input type="password" placeholder="Hint-Strong password">
+            <label for="password">Confirm Password : </label>
+            <input type="password"><br><br>
+
+            <label for="resume">upload your resume : </label>
+            <input type="file" id="resume"><br><br>
+            
+            <input type="checkbox">
+            <label for="confirm">I agree to Submit the form</label><br><br>
+
+            <button type="button" onclick="document.write('Thank You Successfully submited')">Submit</button> <br><br>
+            <!-- <button type="submit">Submit</button> -->
+        </form>
+
+        <p>For any query <a href="mailto:lk8578434@gmail.com">Click here </a>to send mail</p>
+
+    </div>
+
+</body>
+</html>
