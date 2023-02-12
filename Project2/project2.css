@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Sevillana&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+nav ul{
+    display: flex;
+    /* justify-content: space-around; */
+}
+nav .logo{
+    list-style: none; 
+}
+nav .logo li a img{
+    width: 70px;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+nav .menu{
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+nav .menu li{
+    margin-right: 50px;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+main .left-section{
+    margin-top: 70px;
+    margin-left: 100px;
+}
+main .left-section p{
+    font-size: 9px;
+    font-weight: 700;
+}
+main .left-section button{
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    padding: 3px;
+    width: 100px;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+main .left-section button:hover{
+    background-color: green;
+    cursor: pointer;
+}
+main .right-section{
+    width: 500px;
+    margin-left: 200px;
+}
+main .upper-img img{
+    width: 120px;
+    margin-right: 5px;
+}
+main .lower-img img{
+    width: 250px;
+    margin-top: 4px;
+}
