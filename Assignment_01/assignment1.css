@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background : linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pexels-maxyne-barcel-10402282\ 1.png"); 
+    background-size: 100vw 100vh; 
+    font-family: 'Red Rose', cursive;
+}
+/* nav bar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.logo img{
+    width: 90px;
+    margin-left: 20px;
+}
+.menus ul{
+    display: flex;
+    list-style: none;
+}
+.menus ul li{
+    margin-right: 25px;
+    font-family: "Red Rose";
+}
+.menus ul li a{
+    text-decoration: none;
+    color: #ffc233;
+}
+nav button{
+    margin-right: 30px;
+    background-color: #ff505f;
+    border: none;
+    width: 80px;
+    height: 30px;
+    color: white;
+    font-family: "Red Rose";
+}
+nav button:hover{
+    background-color: rgb(115, 13, 13);
+    cursor: pointer;
+}
+/* hero section */
+.hero-section main{
+    max-width: 1154px;
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+}
+.hero-section main h1{
+    font-size: 60px;
+    color: #ffc233;
+}
+.hero-section main button{
+    align-self: center;
+    width: 150px;
+    padding: 10px;
+    background: #ff505f;
+    font-family: "Red Rose";
+    color: white;
+    
+    border: none;
+    margin-top: 20px;
+}
+.hero-section main button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+footer{
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+}
+footer img{
+    width: 100px;
+    
+}
