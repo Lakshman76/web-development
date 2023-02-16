@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;  
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+}
+.large_laptop , .laptop, .tablet, .mobile{
+    text-align: center;
+    display: none;
+    font-size: 40px;
+}
+@media screen and ( max-width : 1440px) {
+    body{
+        background-color: forestgreen;
+    }
+    .large_laptop{
+        display: block;
+    }
+}
+@media only screen and (max-width : 1024px) {
+    body{
+        background-color: darkgoldenrod;
+    }
+    .laptop{
+        display: block;
+    }
+    .large_laptop{
+        display: none;
+    }
+}
+@media only screen and (max-width : 768px) {
+    body{
+        background-color:aqua ;
+    }
+    .tablet{
+        display: block;
+    }
+    .laptop{
+        display: none;
+    }
+}
+@media only screen and (max-width : 425px) {
+    body{
+        background-color: crimson;
+    }
+    .mobile{
+        display: block;
+    }
+    .tablet{
+        display: none;
+    }
+}
