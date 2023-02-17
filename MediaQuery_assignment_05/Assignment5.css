@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color:  #111827;
+    color: #fff;
+}
+/* nav section */
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.nav-left-side img{
+    width: 30px;
+    display: none;
+}
+.nav-right-side ul{
+    display: flex;
+    list-style: none;
+}
+.nav-right-side ul li{
+    font-size: 12px;
+    margin-right: 15px;
+}
+nav ul .home{
+    background:rgb(100, 100, 224);
+    padding: 2px 6px;
+    border-radius: 10px;
+}
+/* Main section */
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.main-left-side{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+.main-left-side img{
+    width: 20px;
+    margin-right: 5px;
+}
+.hi{
+    display: flex;
+}
+.main-right-side img{
+    width: 300px;
+}
+.intro #developer {
+    font-size: 18px;
+    color: rgb(197, 197, 89);
+}
+/* project image */
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+.project h2{
+    text-align: center;
+}
+.horizontal-line{
+    border-bottom: 5px solid blue;
+    width: 80px;
+    text-align: center;
+}
+.project-img{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 10px;
+}
+.project-img img{
+    width: 300px;
+}
+.project-img p {
+    text-align: center;
+}
+/* Footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.contact a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    font-size: 30px;
+}
+footer .contact-horizontal-line{
+    width: 150px;
+    border-bottom: 5px solid blue;
+}
+.social-media ul{
+    display: flex;
+    gap: 5px;
+}
+.social-media img{
+    width: 15px;
+}
+.social-media ul{
+    list-style: none;
+}
+/* media query for mobile */
+@media screen and (max-width : 600px) {
+    .nav-left-side img{
+        width: 20px;
+        display: block;
+    }
+    .nav-right-side{
+        display: none;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hi{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .hi img{
+        width: 30px;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .project-img{
+        display: flex;
+        flex-direction: column;
+    }
+}
