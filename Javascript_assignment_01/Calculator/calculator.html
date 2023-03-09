@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CALCULATOR</h1>
+        <div class="upper">
+            <div>
+                <h2>First Number</h2>
+                <input type="text" id="number1">
+            </div>
+            <div>
+                <h2>Operator</h2>
+                <input type="text" id="operator">
+            </div>
+            <div>
+                <h2>Second Number</h2>
+                <input type="text" id="number2">
+            </div>
+        </div>
+        <div class="calculate">
+            <input type="button" value="Result" id="result">
+            <p class="equal">=</p>
+            <div id="final-result"></div>
+        </div>
+        <div class="reset-btn">
+            <input type="reset" value="Reset" id="reset">
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
