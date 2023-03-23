@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double click event listener</title>
+    <style>
+        #btn{
+            background-color: blue;
+            border: none;
+            color: white;
+            width: 100px;
+            height: 25px;
+        }
+        #btn:hover{
+            background-color: #3131ab;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Double Click Event Listener</h1>
+    <h3>Double click and add text</h3>
+    <button id="btn">Double click</button>
+    <h2 id="text"></h2>
+
+    <script>
+        let button = document.getElementById("btn");
+
+        button.addEventListener("dblclick",function addText(){
+            let text = document.getElementById("text");
+            text.innerText += "Lakshman";
+        });
+
+    </script>
+</body>
+</html>
