@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key Press</title>
+
+    <style>
+        .empty-input{
+            background :white;
+            color : black;
+            height : 20px;
+            font-size : 15px;
+            background-image: none;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>Key Press Event Listener</h2>
+    <h3>Press any key and see some difference</h3>
+    <input type="text"  id="text">
+
+    <script>
+        let key = document.getElementById("text");
+
+        key.addEventListener("keypress", ()=>{
+            key.style.background="linear-gradient(to top right, #4158D0, #c850c0, #ffcc70)";
+            key.style.color="white";
+            key.style.height="28px";
+            key.style.fontSize="25px";
+            key.style.border="none";
+        })
+        key.addEventListener("keyup", inputBox);
+        key.addEventListener("blur",inputBox);
+        function inputBox(){
+            if(key.value ===""){
+                key.classList.add('empty-input');
+            }
+            else{
+                key.classList.remove('empty-input');
+            }
+        }
+        
+    </script>
+</body>
+</html>
