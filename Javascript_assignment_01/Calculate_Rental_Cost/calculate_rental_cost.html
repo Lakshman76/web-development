@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Rental Cost</title>
+    <link rel="stylesheet" href="calculate_rental_cost.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculate Rental Cost</h1>
+        <div>
+            <label for="day">How many days you stay</label>
+            <input type="text" id="day">
+        </div>
+        <div>
+            <label for="Rental">Select type of Room</label>
+            <select  id="Rental">
+                <option value=""></option>
+                <option value="Economy">Economy</option>
+                <option value="Midsize">Midsize</option>
+                <option value="Luxury">Luxury</option>
+            </select>
+        </div>
+        <input type="button" value="Calculate" id="btn">
+        <div>
+            <span>Total Cost = </span>
+            <input type="text"  id="output">
+        </div>
+    </div>
+
+    <script src="calculate_rental_cost.js"></script>
+</body>
+</html>
