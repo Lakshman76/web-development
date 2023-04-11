@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #0f0f10;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    width: 100dvw;
+    height: 100dvh;
+}
+/* universal a and li tag */
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* Nav section */
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.nav-left-side img{
+    width: 25px;
+    margin-top: 10px;
+}
+.nav-right-side{
+    display: flex;  
+}
+.nav-right-side ul{
+    display: flex;  
+}
+.nav-right-side ul li{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.nav-right-side a:hover{
+    text-decoration: underline blue;
+    color: blue;
+}
+.nav-right-side button{
+    margin-left: 20px;
+    background: #1e1e21;
+    border-top: 2px solid grey;
+    border-left: 2px solid grey;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 8px 25px;
+}
+.nav-right-side button:hover{
+    cursor: pointer;
+    background-color: #414141;
+    border: none;
+}
+/* main section */
+main{
+    display: flex;
+    position: relative;
+    left: 180px;
+}
+main [alt="mainImage"]{
+    position: relative;
+    top:-150px;
+    width: 190px;
+    height: 430px;
+}
+.main-right-landing{
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 120px;
+}
+main [alt="onEar"]{
+    width: 250px;
+    height: 50px;
+    margin-left: 30px;
+}
+.main-right-landing h1{
+    margin-bottom: 20px;
+}
+.main-right-landing p{
+    font-size: 10px;
+    font-weight: 500;
+    color: #bdc0c2;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+main .shopping-bag{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #262629;
+    height: 30px;
+    border-radius: 5px;
+}
+main .shopping-bag img{
+    width: 15px;
+    height: 15px;
+    margin-left: 20px;
+    background-color: transparent;
+}
+main .shopping-bag p{
+    margin-bottom: 20px;
+    background-color: transparent;
+    font-size: 12px;
+}
+main .shopping-bag span{
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 500;
+}
+/* Social media section */
+.social-media-section ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.social-media-section img {
+    scale: 0.8;
+}
+/* Specification */
+.specification{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.specification [alt="specsLogo"]{
+    width: 200px;
+}
+.lower-specification{
+    display: flex;
+    gap: 100px;
+    scale: 0.8;
+}
+.bluetooth , .mic{
+    margin-left: 30px;
+}
+/* Cases */
+.case{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    /* gap: 50px; */
+}
+.case-lowerside{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.left-lower img{
+    scale: 0.8;
+}
+.right-lower p{
+    width: 180px;
+    font-size: 15px;
+    line-height: 25px;
+}
+.case-info{
+    display: flex;
+    align-items: center;
+    background: #262629;
+    margin-top: 20px;
+    border-radius: 8px;
+    width: 150px;
+    height: 40px;
+}
+.case-info img{
+    scale: 0.8;
+    background-color: transparent;
+    margin: 0 15px;
+}
+.case-info span{
+    background-color: transparent;
+}
+/* Buy product Section */
+.buy-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #262629;
+    scale: 0.8;
+    border-radius: 20px;
+    height: 350px;
+}
+.left-buy{
+    /* scale: 0.8; */
+    background-color: transparent;
+    width: 200px;
+    margin-right: 50px;
+}
+.left-buy h3{
+    background-color: transparent;
+}
+.left-buy p{
+    background-color: transparent;
+    margin-top: 20px;
+}
+.left-buy div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+}
+.left-buy div img{
+    margin-right: 10px;
+}
+.right-buy{
+    background-color: transparent;
+}
+.right-buy img{
+    background-color: transparent;
+}
+/* Choose our product */
+.choose{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+}
+.choose [alt="productLogo"]{
+    width: 200px;
+    margin-bottom: 30px;
+}
+.product-item{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 80px;
+    margin-top: 30px;
+}
+.product-item [alt$="Headphone"]{
+    width: 100px;
+    position: relative;
+    top: -30px;
+    left: 8px;
+}
+.product-item [class$="product"]{
+    background: #2f3031;
+    width: 120px;
+}
+.product-item [class$="product"] img , p , span{
+    background-color: transparent;
+}
+.product-item [class$="product-info"]{
+    background: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+}
+.product-item [class$="product-info"] p{
+    font-weight: 700;
+}
+.product-item [class$="product-info"] span{
+    font-weight: 400;
+    font-size: 12px;
+}
+.product-item [class$="product-info"] img{
+    width: 15px;
+    height: 18px;
+    background-color: #0f0f10;
+}
+/* Footer section */
+footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    /* margin-bottom: 80px; */
+}
+footer .products ul{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer .support ul{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 200px;
+}
+footer .subscription{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+footer .subscription .email{
+    display: flex;
+    justify-content: center;
+    background-color:#2f3031 ;
+    width: 310px;
+    height: 40px;
+}
+footer .subscription .email input{
+    border: none;
+    background-color: transparent;
+}
+footer .subscription .email .subscribe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: 5px;
+    height: 30px;
+    border-radius: 5px;
+}
+footer .subscription .email .subscribe p{
+    padding: 8px;
+}
+footer .subscription .email .subscribe img{
+    padding: 6px;
+}
