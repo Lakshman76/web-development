@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #414141;
+}
+img{
+    width: 300px;
+    border-radius: 50px;
+    box-shadow: 0 0 8px #ffffff;
+}
