@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+button{
+    width: 110px;
+    height: 30px;
+    background-color: blue;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+}
+button:hover{
+    cursor: pointer;
+    background-color:transparent;
+    border: 2px solid blue;
+    color: blue;
+    
+}
