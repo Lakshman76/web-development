@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav section */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+.logo{
+    width: 100px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+nav ul li a{
+    text-decoration:none;
+    color: black;
+    font-weight: 600;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+/* main section */
+main {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .hospitalDescription {
+    width: 70%;
+    text-align: center;
+  }
+  
+  .hospitalDescription h1 {
+    margin-bottom: 15px;
+    color: #20BC7E;
+    font-size: 30px;
+  }
+  
+  .hospitalDescription p {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  /* desinging the achievement card */
+  .achievement {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+  }
+  
+  .achievementCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    
+  }
+  .achievementCard span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #20BC7E;
+  }
+  
+  .achievementCard p {
+    font-size: 16px;
+    font-weight: 500;
+  }

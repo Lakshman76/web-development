@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* nav section */
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+    margin-top: 20px;
+}
+.logo{
+    width: 100px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+nav ul li a{
+    text-decoration:none;
+    color: black;
+    font-weight: 600;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+main{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form{
+    width: 300px;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 80px;
+  }
+
+  form h1{
+    text-align: center;
+    font-size: 22px;
+  }
+
+  form div{
+    display: flex;
+    flex-direction: column;
+  }
+
+  form div label{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+
+  form div input{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+
+  form div textarea{
+    resize: none;
+    height: 70px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+  }
+
+  form button{
+    border: transparent;
+    border-radius: 10px;
+    background: #20BC7E;
+    color: white;
+    font-size: 15px;
+    padding: 5px;
+  }
+  form button:hover{
+    cursor: pointer;
+    background-color: #04824f;
+  }
