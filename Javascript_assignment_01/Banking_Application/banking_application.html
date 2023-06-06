@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Application</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="banking_application.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <h1>Banking Application</h1>
+            <div>
+                <label for="name">Enter Your Name</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="ac-no">Enter Account Number</label>
+                <input type="number" id="ac-no">
+            </div>
+            <div>
+                <label for="money">Select What You Want</label>
+                <select id="money">
+                    <option value=""></option>
+                    <option value="Deposit Money">Deposit Money</option>
+                    <option value="Withdraw Money">Withdraw Money</option>
+                </select>
+            </div>
+            <div>
+                <label for="amount">Enter Amount</label>
+                <input type="number" id="amount">
+            </div>
+            <!-- <button id="Deposit-withdraw">Submit</button> -->
+            <input type="button" value="Submit" id="Deposit-withdraw">
+            <button id="btn">Check Balance</button>
+            <div id="output"> </div>
+        </div>
+    </div>
+    <!-- Link javascript -->
+    <script src="banking_application.js"></script>
+</body>
+</html>
