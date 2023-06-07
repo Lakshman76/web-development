@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 2px solid black;
+    border-radius: 20px;
+}
+.container .wrapper{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.container .wrapper div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.container .wrapper h1{
+    font-size: 60px;
+}
+.container .wrapper label{
+    font-size: 30px;
+}  
+.container .wrapper input{
+    width:300px;
+    height: 30px;
+    margin-left: 10px;
+    background-color: transparent;
+    color: rgb(63, 62, 62);
+    font-size: 25px;
+    border: none;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.container .wrapper select{
+    width: 300px;
+    height: 30px;
+    margin-left: 10px;
+    font-size: 18px;
+    text-align: center;
+    background-color: transparent;
+}
+.container .wrapper select option{
+    background-color:#fbd786;
+}
+.container .wrapper #Deposit-withdraw{
+    width: 40%;
+    height: 34px;
+    color: white;
+    font-weight: 500;
+    background-color: #3e3ef2;
+    border: none;
+    border-radius: 5px;
+}
+.container .wrapper #Deposit-withdraw:hover{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid blue;
+    color: blue;
+}
+.container .wrapper button{
+    width: 50%;
+    height: 34px;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #f7797d;
+}
+.container .wrapper button:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: #f85e63;
+    border: 2px solid #f7797d;
+}
+.container .wrapper #output{
+    display: flex;
+    justify-content: inherit;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+/* Media query */
+
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+    body{
+        background-repeat: no-repeat;
+    }
+    .container{
+        border: none;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .container .wrapper h1{
+        font-size: 45px;
+    }
+    .container .wrapper div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .container .wrapper div input{
+        margin-left: 0;
+        width: 100%;
+        height: 45px;
+        font-size: 30px;
+    }
+    .container .wrapper select{
+        width: 100%;
+        height: 45px;
+        font-size: 28px;
+    }
+    .container .wrapper select option{
+        background-color: transparent;
+        font-size: 20px;
+    }
+    .container .wrapper #Deposit-withdraw{
+        width: 100%;
+        height: 50px;
+        font-size: 30px;
+    }
+    .container .wrapper button{
+        width: 100%;
+        height: 50px;
+        font-size: 28px;
+    }
+    .container .wrapper #output{
+        font-size: 30px;
+    }
+}
+/* Media query for mobile  */
+@media  (max-width: 480px){
+    body{
+        background-repeat: no-repeat;
+    }
+    .container{
+        border: none;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .container .wrapper h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .container .wrapper div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .container .wrapper div input{
+        margin-left: 0;
+        width: 100%;
+        height: 45px;
+        font-size: 30px;
+    }
+    .container .wrapper select{
+        width: 100%;
+        height: 45px;
+        font-size: 28px;
+    }
+    .container .wrapper select option{
+        background-color: transparent;
+        font-size: 20px;
+    }
+    .container .wrapper #Deposit-withdraw{
+        width: 100%; 
+        height: 50px;
+        font-size: 30px;
+    }
+    .container .wrapper button{
+        width: 100%;
+        height: 50px;
+        font-size: 24px;
+    }
+    .container .wrapper #output{
+        font-size: 30px;
+    }
+}  
+ 
