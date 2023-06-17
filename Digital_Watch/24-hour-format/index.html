@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Watch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="clock">
+        <h2><span class="name">Lakshman's</span> Digital Watch</h2>
+        <div id="time">
+            <div>
+                <span id="hr">00</span>
+                <span>Hours</span>
+            </div>
+            <div>
+                <span id="min">00</span>
+                <span>Minutes</span>
+            </div>
+            <div>
+                <span id="sec">00</span>
+                <span>Seconds</span>
+            </div>
+        </div>
+    </div>
+   <script>
+    const clock = () => {
+        let hours = document.querySelector('#hr');
+        let minutes = document.querySelector('#min');
+        let seconds = document.querySelector('#sec');
+
+        let hr = new Date().getHours();
+        let min = new Date().getMinutes();
+        let sec = new Date().getSeconds();
+
+        hours.innerHTML=hr;
+        minutes.innerHTML=min;
+        seconds.innerHTML=sec;
+    }
+    setInterval(clock, 1000);
+   </script>
+</body>
+</html>
