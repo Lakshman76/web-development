@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position in CSS</title>
+    <style>
+        /* Sample text style */
+        .sample-text{
+            border: 20px solid black;
+            padding: 30px;
+            
+        }
+        .sample-text p{
+            font-size: 1.5rem;
+            text-align: justify;
+        }
+
+        /*for position Static Design */
+        .static h2{
+            position: static;
+            background-color: yellowgreen;
+            padding: 10px;
+        }
+
+        /*for position fixed Design */
+        .fixed h2{
+            position: fixed;
+            background-color: orange;
+            color: blue;
+            padding: 15px;
+        }
+
+        /*for position sticky Design */
+        .sticky{
+            position: sticky;
+            top: 10px;
+            background-color: yellow;
+            color: rebeccapurple;
+        }
+
+        /*for position relative Design */
+        .relative{
+            display: flex;
+        }
+        .relative div{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin: 10px;
+        }
+        .rel2{
+            background-color: blueviolet;
+            position: relative;
+            top: 35px;
+            left: 16px;
+            color: white;
+            text-align: center;
+        }
+
+        /*for position Absolute Design */
+        .absolute{
+            position: relative;
+            display: flex;
+        }
+        .absolute div{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            margin: 10px;
+        }
+        .abs2 {
+            position: absolute;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, debitis?</p>
+    
+    <!-- Position static -->
+
+    <div class="static">
+        <h2>Static text --- normal flow</h2>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ratione!</p>
+
+    <!-- Position fixed -->
+
+    <div class="fixed">
+        <h2>Fixed text --- stay fixed when page scroll</h2>
+    </div>
+
+    <!-- Position sticky -->
+
+    <div class="sticky">
+        <h2>Sticky text --- become fix after certain condition</h2>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, hic.</p>
+
+    <!-- Position relative -->
+
+    <div class="relative">
+        <h2>Position relative ---  it stay in it's original position</h2>
+        <div class="rel1"></div>
+        <div class="rel2">Relative</div>
+        <div class="rel3"></div>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, officia?</p>
+
+    <!-- Position absolute -->
+
+    <div class="absolute">
+        <h2>Position absolute -- It comes to the starting of it's area </h2>
+        <div class="abs1"></div>
+        <div class="abs2">Absolute</div>
+        <div class="abs3"></div>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, autem.</p>
+
+    <!-- sample text -->
+
+    <div class="sample-text">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, nam nemo. Sunt consectetur in illo eum repudiandae tempora recusandae cumque porro harum hic deleniti mollitia quam voluptates numquam et unde maiores assumenda soluta necessitatibus, voluptatem nam iure distinctio at. Quod fugiat nulla quasi laudantium architecto consequatur molestias soluta impedit repellendus debitis saepe corporis illo, iti illum quod voluptatum officiis totam corrupti ratione cumque. Voluptatibus soluta est blanditiis corporis impedit, modi debitis, facere aut quos, itaque id illum? Quam dolor similique debitis quod ex placeat rem! Nemo incidunt accusamus nobis tempore voluptatum dolores, at placeat quis aut iusto maxime animi, quam suscipit voluptas. Suscipit sequi, dicta fugit aut et sint blanditiis accusantium, optio amet quis assumenda! Quisquam perspiciatis rerum iste voluptas eum numquam minus, repellendus rem doloremque? Sint est aspernatur voluptatibus consequatur alias quas dicta quaerat mollitia, obcaecati dolore soluta ad quis ipsa at corrupti architecto. Mollitia culpa aspernatur dolore modi explicabo est iure at, animi sequi suscipit, expedita voluptate totam unde porro? Quia non nobis sapiente obcaecati distinctio, dicta quisquam vero id asperiores voluptate consectetur voluptatum repellendus, aperiam deserunt harum consequuntur beatae fugiat perspiciatis incidunt temporibus magnam, rem totam neque? Magnam veritatis facilis dolorum minima pariatur temporibus nesciunt tempora officiis sapiente, nihil voluptate corporis, architecto ex excepturi natus magni maxime itaque perspiciatis laborum necessitatibus beatae non exercitationem eaque. Ullam beatae voluptatibus est facilis tenetur, cumque laudantium ipsam, unde modi odit fugit veritatis incidunt et enim dolor reprehenderit id minus quod architecto exercitationem possimus accusamus. Esse architecto maiores sapiente, nobis eligendi voluptas maxime labore neque in dolores hic nisi placeat suscipit reiciendis rem delectus, eos quae nostrum, voluptate eius eaque! Ipsa ipsam fugit officiis explicabo laudantium modi iusto beatae, a ab asperiores esse quia numquam laboriosam distinctio magnam. Accusamus eaque nesciunt quisquam excepturi, illo modi consequatur blanditiis ex eum. Ut beatae quaerat inventore labore ex? Voluptatum, sunt. Sequi numquam neque magni similique minus unde pariatur illum commodi molestias ratione nobis, mollitia odio distinctio cupiditate libero a quidem tenetur, blanditiis vel nesciunt facere accusantium veritatis. Necessitatibus reiciendis, cum ab earum, nulla excepturi, accusantium quia voluptatem magnam deleniti quod nisi aut reprehenderit enim temporibus iste velit quas blanditiis. Tempora, voluptatum quae laudantium et sint reiciendis hic aliquam adipisci libero voluptates magnam mollitia quos tenetur porro dignissimos dolorum facilis veniam repellat, veritatis sapiente rem officia incidunt neque quas? Beatae, animi illum quis voluptate, optio ipsa maxime deleniti sed alias repellat dicta cupiditate veniam voluptatem ex adipisci eaque ea libero velit praesentium maiores ipsam. Accusamus labore facilis temporibus numquam magnam hic praesentium impedit? Officiis, accusantium porro voluptatibus voluptas odio temporibus, voluptates similique necessitatibus perferendis ullam iusto qui eius officia. Ullam, inventore assumenda voluptatum quod et incidunt illum placeat quo eius praesentium sequi ipsam magnam repudiandae, earum quaerat magni. Repellendus ipsa labore sapiente consectetur. Asperiores hic libero tempora, reprehenderit est in eum temporibus amet molestias repellat voluptate! Nihil nulla sed minus voluptatum natus possimus. Odio assumenda sed cupiditate velit dolores placeat molestias vel ullam corporis, earum facilis laborum quod obcaecati sit dolorum hic cum exercitationem, magni quaerat eum consequuntur consectetur eveniet. Accusantium repudiandae eligendi, molestiae dolor beatae veritatis, quo consectetur aperiam eveniet eius voluptas ab. Neque, porro ducimus veniam aliquam aliquid nihil vel possimus quam voluptate cum dolores nisi ipsam sunt dignissimos provident error esse eius, incidunt eveniet, iure a eos sapiente pariatur numquam! Maiores suscipit nam quae nesciunt ullam reprehenderit cumque dolor, molestias eveniet id voluptates vel quod.</p>
+    </div>
+</body>
+</html>
