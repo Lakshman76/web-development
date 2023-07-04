@@ -1,0 +1,49 @@
+What is Execution Context?
+
+Answer-
+
+Execution context is a term when we run our JavaScript Source code it scans the whole code and makes an execution context to run the code.
+
+Lets Understand it with an Example :-
+// CODE
+let a = 10;
+let b = 20;
+
+function sum(m, n){
+    let sum = m + n;
+    return sum;
+}
+
+let result = sum(a, b);
+console.log(result);
+In two phase the JavaScript code gets executed:-
+Memory Creation Phase :- In memory creation phase, the JavaScript engine creates the execution context and all the variables and functions are assigned the memory.
+// Here
+a -> undefined
+b -> undefuned
+sum -> definition
+result -> undefined
+Execution Phase :- In the execution phase, all the variables are assigned the values in this phase and any function call made is also handelled in this phase.
+If any function call is made than again an execution context is made for the function call and this process repeats.
+
+Here again we have an memory cration phase and execution phase.
+
+a -> 10
+b -> 20
+sum -> definition
+result // here for calculating the value of result we have to make an execution phase for the function call.
+For function call:-
+Memory Creation Phase :-
+// Here
+a -> undefined
+b -> undefined
+sum -> undefined
+Execution Phase :-
+// Here
+a -> 10
+b -> 20
+sum -> 30 
+// sum = 30 is returned to the global execution context
+After getting the value of sum this execution context is destroyed.
+
+Now the sum is assigned to the result and it will be printed.
