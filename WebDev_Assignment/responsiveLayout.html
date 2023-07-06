@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #212121;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .navbar .box1 {
+            height: 10vh;
+            width: 30%;
+            background-color: #00b7ff;
+        }
+
+        .navbar .box2 {
+            height: 10vh;
+            width: 70%;
+            background-color: #c1c1c1;
+        }
+
+        .main {
+            margin: 20px 0;
+            height: 40vh;
+            width: 100%;
+            background-color: #808080;
+        }
+
+        .cards {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .cards .card {
+            height: 30vh;
+            width: 33.33vw;
+            background-color: #87ceeb;
+        }
+
+        .footer {
+            height: 30vh;
+            width: 100%;
+            background-color: #c1c1c1;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 500px) {
+            .cards {
+                flex-direction: column;
+            }
+
+            .cards .card {
+                height: 20vh;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+
+        <div class="main">
+        </div>
+
+        <div class="cards">
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+
+        <div class="footer">
+        </div>
+    </div>
+</body>
+
+</html>
