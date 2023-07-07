@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+}
+/* Nav Bar */
+header{
+    background-color: black;
+}
+nav{
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 90px;
+    background-color: black;
+}
+.item ul{
+    display: flex;
+    gap: 30px;
+}
+.item ul li{
+    list-style: none;
+}
+.item ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+.login button{
+    font-size: 1.4em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    width: 130px;
+    padding: 10px;
+    border: none;
+    background-color:rgb(0, 127, 254);;
+    color: white;
+    border-radius: 10px;
+}
+.login button:hover{
+    cursor: pointer;
+}
+.hamberger{
+    display: none;
+}
+
+/* main section */
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.left-section{
+    display: flex;
+    flex-direction: column;
+}
+.hi{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.left-section h1{
+    font-size: 3em;
+    color: rgb(0, 183, 255);
+}
+.left-section .brand{
+    color: rgb(0, 94, 255);
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.left-section img{
+    width: 480px;
+}
+.left-section .para{
+    margin-top: 30px;
+    font-weight: 600;
+}
+.right-section video{
+    width: 600px;
+}
+
+/* Media query */
+
+@media screen and (max-width:1024px) and (min-width:768px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:768px) and (min-width:480px){
+    .item{
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    .hamberger{
+        display: inline;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .left-section img{
+        width: 420px;
+    }
+    .right-section video{
+        width: 450px;
+    }
+}
+@media screen and (max-width:480px){
+    .item{
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+    .hamberger{
+        display: inline;
+    }
+    main{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .left-section img{
+        width: 350px;
+    }
+    .right-section video{
+        width: 350px;
+    }
+}
