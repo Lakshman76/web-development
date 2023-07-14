@@ -1,0 +1,110 @@
+<!-- Build a responsive Navbar, on smaller screens it should be a hamburger menu which on click should reveal the menu items nicely, and on larger screens they should be displayed directly on the screen. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive nav-bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #001C40;
+        }
+        .logo img{
+            width: 80px;
+        }
+        nav{
+            display: flex;
+            background-color: white;
+            justify-content: space-around;
+            align-items: center;
+        }
+        nav ul{
+            display: flex;
+            gap: 30px;
+        }
+        ul li{
+            list-style: none;
+        }
+        ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+        .hamburger{
+            display: none;
+            cursor: pointer;
+        }
+        
+        @media screen and (max-width: 768px) {
+            nav{
+                height: 50px;
+            }
+            .logo{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            nav{
+                height: 50px;
+            }
+            .logo{
+                display: none;
+            }
+            .item{
+                display: none;
+            }
+            nav{
+                display: flex;
+                justify-content:flex-start;
+            }
+            .hamburger{
+                display: inline;
+                margin-left: 1.3rem;
+            }
+            .item.show{
+                display: flex;
+                flex-direction: column;
+                gap: 1px;
+                background-color: #414141;
+                color: white;
+                margin-top: 100px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="hamburger">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+        </div>
+        <div class="logo">
+            <img src="https://www.brandforum.it/wp-content/uploads/2019/03/27620191021093834.jpg" alt="logo">
+        </div>
+        <div>
+            <ul class="item">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        let hamburger = document.querySelector('.hamburger')
+        let item = document.querySelector('.item');
+        hamburger.addEventListener('click', ()=>{
+            item.classList.toggle('show');
+        })
+    </script>
+</body>
+</html>
